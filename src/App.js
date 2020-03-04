@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header'
+import Technologies from './Technologies'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       Social Network
+      <Header />
+      <Technologies />
     </div>
   );
 }
