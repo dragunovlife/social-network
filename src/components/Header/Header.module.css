@@ -1,15 +1,28 @@
 .header {
+  display: flex;
   grid-area: h;
-  background: #f2709c;
+  border-radius: 50px;
+  background: #8E2DE2;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff9472, #f2709c);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .header img {
   width: 100px;
-  background-color: gray;
+  margin-left: 50px;
+}
+
+ul {
+  display: flex;
+  align-items: center
+}
+
+li {
+  margin-left: 40px;
+  list-style-type: none;
+  color: #fff;
 }
