@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Myposts.module.css';
 import Post from './Post/Post';
-import Like from './Post/Like';
+import Like from './Post/Like/Like';
 const Myposts = () => {
   return (
-    <div>
+    <div className={classes.myposts}>
       My posts
     <div>
         <textarea></textarea>

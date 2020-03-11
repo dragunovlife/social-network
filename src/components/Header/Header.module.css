@@ -1,7 +1,8 @@
 .header {
+  margin-left: 208px;
   display: flex;
   grid-area: h;
-  border-radius: 50px;
+  border-radius: 0px 0px 50px 50px;
   background: #8E2DE2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
@@ -11,7 +12,7 @@
 
 }
 
-.header img {
+.logo {
   width: 100px;
   margin-left: 50px;
 }

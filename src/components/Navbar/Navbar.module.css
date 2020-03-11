@@ -1,6 +1,6 @@
 .nav {
   grid-area: n;
-  border-radius: 50px;
+  border-radius: 0px 50px;
   background: #8E2DE2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
