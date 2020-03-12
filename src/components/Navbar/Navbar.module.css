@@ -16,6 +16,21 @@
   color: #fff;
 }
 
-.item.active {
-  color: gold;
+.item a {
+  color: #fff; /* Цвет ссылки */
+  text-decoration: none;
+  
+}
+
+.item a:visited {
+    color: #fff; /* Цвет посещённой ссылки */
+   } 
+
+.item a:hover {
+    color: red; /* Цвет ссылки при наведении на нее курсора мыши */  
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+   }
+
+.item.active a {
+  color: gold; /* Цвет активной ссылки */
 }

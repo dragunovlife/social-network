@@ -3,7 +3,7 @@ import classes from './Header.module.css';
 
 const Header = () => {
   return <header className={classes.header}>
-    <img className={classes.logo} src="https://c7.hotpng.com/preview/10/44/851/sydney-bears-australian-ice-hockey-league-logo-sport-sports.jpg" />
+    <img className={classes.logo} src="../logo1.png" />
     <ul>
       <li>Home</li>
       <li>Discussion</li>

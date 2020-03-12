@@ -15,6 +15,7 @@
 .logo {
   width: 100px;
   margin-left: 50px;
+  border-radius: 50px;
 }
 
 ul {
