@@ -13,6 +13,7 @@
 
 .app-wrapper-content {
   grid-area: c;
+  margin-top: 50px;
   background: #8E2DE2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);

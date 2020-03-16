@@ -10,8 +10,12 @@ const Header = () => {
       <li>Weather</li>
       <li>Pages</li>
       <li>Blog</li>
+      <li>Сделать таймер</li>
+      <li>Сделать список задач</li>
+      <li>Прогрес бар</li>
     </ul>
   </header>
+  
 }
 
 export default Header;

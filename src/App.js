@@ -9,6 +9,7 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
+import Timer from './components/Timer/Timer';
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
 
      <div className="app-wrapper-content">
      <Route path='/profile' component={Profile} />
-     <Route path='/dialogs' component={Dialogs} />
+     <Route exact path='/dialogs' component={Dialogs} />/* Add exact */
      <Route path='/news' component={News} />
      <Route path='/music' component={Music} />
      <Route path='/settings' component={Settings} />
+     <Route path='/timer' component={Timer} />
 
    </div>
 
