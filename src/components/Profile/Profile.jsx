@@ -1,17 +1,15 @@
 import React from 'react';
 import classes from './Profile.module.css';
 import Myposts from './My posts/Myposts';
-import Frontimg from './Frontimg/Frontimg';
+import Profileimg from './Profileimg/Profileimg';
+import Description from './Description/Description';
 
 const Profile = () => {
   return (
     <div>
       
-      <Frontimg />
-
-      <div>
-        ava+description
-     </div>
+      <Profileimg />
+      <Description />
 
       <Myposts />
 

@@ -21,7 +21,7 @@ function App() {
 
      <div className="app-wrapper-content">
      <Route path='/profile' component={Profile} />
-     <Route exact path='/dialogs' component={Dialogs} />/* Add exact */
+     <Route path='/dialogs' component={Dialogs} />/* Delete exact */
      <Route path='/news' component={News} />
      <Route path='/music' component={Music} />
      <Route path='/settings' component={Settings} />

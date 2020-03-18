@@ -5,13 +5,18 @@ import Like from './Post/Like/Like';
 const Myposts = () => {
   return (
     <div className={classes.myposts}>
-      My posts
+      <h3>My posts</h3>
     <div>
-        <textarea></textarea>
+        <div>
+          <textarea></textarea>
+        </div>
+
+        <div>
         <button>Add post</button>
         <button>Remove</button>
-      </div>
-      <div className={classes.posts}>
+        </div>
+    </div>
+    <div className={classes.posts}>
         <Post message='Hi, how are you' counts="30" />
         <Like counts="60" />
         <Post message="It's my first post" />
