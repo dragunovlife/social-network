@@ -1,19 +1,18 @@
 .app-wrapper {
   display: grid;
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   grid-template-areas:
     "h h h"
     "n c s";
-
   grid-template-rows: 100px 1fr 1fr;
   grid-template-columns: 2fr 8fr 2fr;
   grid-gap: 10px;
+  background: #222;
 }
 
 .app-wrapper-content {
   grid-area: c;
-  margin-top: 50px;
   background: #8E2DE2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);

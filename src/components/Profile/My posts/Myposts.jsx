@@ -3,12 +3,23 @@ import classes from './Myposts.module.css';
 import Post from './Post/Post';
 import Like from './Post/Like/Like';
 const Myposts = () => {
+  
+    let postData = [
+      {id: 1, message: 'Hi, how are you'}, 
+      {id: 2, message: 'It\'s my first post'}
+    ]
+
+    let likeData = [
+      {id: 1, likesCount: 60}, 
+      {id: 2, likesCount: 30}
+    ]
+      
   return (
     <div className={classes.myposts}>
-      <h3>My posts</h3>
+      <h2>My posts</h2>
     <div>
         <div>
-          <textarea></textarea>
+          <textarea className={classes.textarea}></textarea>
         </div>
 
         <div>
@@ -17,10 +28,10 @@ const Myposts = () => {
         </div>
     </div>
     <div className={classes.posts}>
-        <Post message='Hi, how are you' counts="30" />
-        <Like counts="60" />
-        <Post message="It's my first post" />
-        <Like counts="30" />
+        <Post message={postData[0].message} />
+        <Like counts={likeData[0].likesCount} />
+        <Post message={postData[1].message} />
+        <Like counts={likeData[1].likesCount} />
       </div>
     </div>)
 }

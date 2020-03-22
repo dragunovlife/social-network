@@ -1,18 +1,12 @@
 .nav {
+  height: 500px; 
   grid-area: n;
-  border-radius: 0px 50px;
-  background: #8E2DE2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #222;
 }
 
 .item {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: center;  
   color: #fff;
 }
 
@@ -21,20 +15,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 50px;
   color: #fff; /* Цвет ссылки */
   text-decoration: none;
-  border-radius: 0px 50px;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .item a:visited {
-    color: #fff; /* Цвет посещённой ссылки */
-   } 
+    color: gray; /* Цвет посещённой ссылки */
+} 
 
 .item a:hover {
-    color: gray; /* Цвет ссылки при наведении на нее курсора мыши */  
-    background: #8E2DE2;
-   }
+  color: gray; /* Цвет ссылки при наведении на нее курсора мыши */  
+  border: 2px solid transparent;
+  border-image: linear-gradient(#4A00E0, #8E2DE2);
+  border-image-slice: 1;
+}
 
 .item a.activeLink {
   color: gray; /* Цвет активной ссылки */

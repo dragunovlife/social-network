@@ -12,6 +12,9 @@ const Navbar = () => {
       <NavLink to="/dialogs" activeClassName={classes.activeLink}>Messages</NavLink>
     </div>
     <div className={classes.item}>
+      <NavLink to="/target" activeClassName={classes.activeLink}>Target</NavLink>
+    </div>
+    <div className={classes.item}>
       <NavLink to="/news" activeClassName={classes.activeLink}>News</NavLink>
     </div>
     <div className={classes.item}>
@@ -24,6 +27,15 @@ const Navbar = () => {
       <NavLink to="/settings" activeClassName={classes.activeLink}>Блокнот</NavLink>
     </div>
     <div className={classes.item}>
+      <NavLink to="/settings" activeClassName={classes.activeLink}>Tools</NavLink>
+    </div>
+     <div className={classes.item}>
+      <NavLink to="/settings" activeClassName={classes.activeLink}>Questions</NavLink>
+    </div>
+    <div className={classes.item}>
+      <NavLink to="/settings" activeClassName={classes.activeLink}>Idiea</NavLink>
+    </div>
+     <div className={classes.item}>
       <NavLink to="/settings" activeClassName={classes.activeLink}>Settings</NavLink>
     </div>
   </nav>

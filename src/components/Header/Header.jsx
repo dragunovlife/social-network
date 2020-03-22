@@ -5,14 +5,14 @@ const Header = () => {
   return <header className={classes.header}>
     <img className={classes.logo} src="../logo1.png" />
     <ul>
-      <li>Home</li>
-      <li>Discussion</li>
-      <li>Weather</li>
-      <li>Pages</li>
-      <li>Blog</li>
-      <li>Сделать таймер</li>
-      <li>Сделать список задач</li>
-      <li>Прогрес бар</li>
+      <a><li>Home</li></a>
+      <a><li>Discussion</li></a>
+      <a><li>Weather</li></a>
+      <a><li>Pages</li></a>
+      <a><li>Blog</li></a>
+      <a><li>Сделать таймер</li></a>
+      <a><li>Сделать список задач</li></a>
+      <a><li>Прогрес бар</li></a>
     </ul>
   </header>
   

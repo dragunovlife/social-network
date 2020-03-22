@@ -26,9 +26,6 @@ const Sidebar = () => {
     <div className={classes.triangleright}>
       <NavLink to="/settings" activeClassName={classes.activeLink}>7</NavLink>
     </div>
-    <div className={classes.triangleleft}>
-      <NavLink to="/settings" activeClassName={classes.activeLink}>8 </NavLink>
-    </div>
   </div>
   )
 }
