@@ -2,17 +2,22 @@ import React from 'react';
 import classes from './Myposts.module.css';
 import Post from './Post/Post';
 import Like from './Post/Like/Like';
-const Myposts = () => {
+
+const Myposts = (props) => {
   
-    let postData = [
-      {id: 1, message: 'Hi, how are you'}, 
-      {id: 2, message: 'It\'s my first post'}
+    let posts = [
+      {id: 1, message: 'Hi, how are you', likesCount: 12}, 
+      {id: 2, message: 'It\'s my first post', likesCount: 23}
     ]
 
-    let likeData = [
+    let postsElements = posts.map( p => <Post message={p.message} likesCount={p.likesCount} />);
+
+    /*let like = [
       {id: 1, likesCount: 60}, 
       {id: 2, likesCount: 30}
     ]
+
+    let likeElements = like.map( l => <Like counts={l.likesCount} /> );*/
       
   return (
     <div className={classes.myposts}>
@@ -28,12 +33,16 @@ const Myposts = () => {
         </div>
     </div>
     <div className={classes.posts}>
-        <Post message={postData[0].message} />
-        <Like counts={likeData[0].likesCount} />
-        <Post message={postData[1].message} />
-        <Like counts={likeData[1].likesCount} />
-      </div>
+        { postsElements }
+       {/* { likeElements }*/}
+    </div>
     </div>)
 }
 
 export default Myposts;
+
+
+
+
+
+    
