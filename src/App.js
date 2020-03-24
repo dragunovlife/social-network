@@ -10,6 +10,7 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
+import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
 
 function App() {
@@ -26,8 +27,10 @@ function App() {
      <Route path='/news' component={News} />
      <Route path='/target' component={Target} />
      <Route path='/music' component={Music} />
-     <Route path='/settings' component={Settings} />
      <Route path='/timer' component={Timer} />
+    <Route path='/idea' component={Idea} />
+     <Route path='/settings' component={Settings} />
+    
 
      </div>
 

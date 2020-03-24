@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './Myposts.module.css';
+import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 import Like from './Post/Like/Like';
 
-const Myposts = (props) => {
+const MyPosts = (props) => {
   
     let posts = [
       {id: 1, message: 'Hi, how are you', likesCount: 12}, 
@@ -39,7 +39,7 @@ const Myposts = (props) => {
     </div>)
 }
 
-export default Myposts;
+export default MyPosts;
 
 
 
