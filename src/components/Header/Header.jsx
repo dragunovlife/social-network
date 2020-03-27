@@ -15,7 +15,7 @@ const Header = () => {
       <a><li>Прогрес бар</li></a>
     </ul>
   </header>
-  
+
 }
 
 export default Header;

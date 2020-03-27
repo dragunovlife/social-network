@@ -4,18 +4,17 @@ import MyPosts from './MyPosts/MyPosts';
 import Profileimg from './Profileimg/Profileimg';
 import Description from './Description/Description';
 
-const Profile = () => {
+const Profile = (props) => {
 
-  return (
-    <div>
-  
-      <Profileimg />
-      <Description />
+	return (
+		<div>
 
-      <MyPosts />
+			<Profileimg />
+			<Description />
+			<MyPosts />
 
-    </div>
-  )
+		</div>
+	)
 }
 
 export default Profile;

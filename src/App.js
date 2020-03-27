@@ -13,6 +13,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
 
+let SomeComponent = () => <Idea />
+
 function App() {
   return (
     <BrowserRouter>
@@ -28,11 +30,13 @@ function App() {
      <Route path='/target' component={Target} />
      <Route path='/music' component={Music} />
      <Route path='/timer' component={Timer} />
-    <Route path='/idea' component={Idea} />
-     <Route path='/settings' component={Settings} />
-    
+     /*<Route path='/idea' component={Idea} />
+     <Route path='/settings' component={Settings} />*/
 
-     </div>
+     <Route path='/idea' render={ () => <Idea /> } />
+     <Route path='/settings' render={ () => <Settings /> } />
+
+    </div>
 
 
     </div>
