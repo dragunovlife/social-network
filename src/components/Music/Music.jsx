@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./Music.module.css"
+import classes from "./Music.module.css";
 
 const Music = (props) => {
 	return (
@@ -8,5 +8,9 @@ const Music = (props) => {
 		</div>
 	)
 }
+
+const percentage = 66;
+ 
+
 
 export default Music;

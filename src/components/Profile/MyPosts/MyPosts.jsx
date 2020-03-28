@@ -5,12 +5,8 @@ import Like from './Post/Like/Like';
 
 const MyPosts = (props) => {
 
-  let posts = [
-    { id: 1, message: 'Hi, how are you', likesCount: 12 },
-    { id: 2, message: 'It\'s my first post', likesCount: 23 }
-  ]
-
-  let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
+  let postsElements = 
+  props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
 
   /*let like = [
     {id: 1, likesCount: 60}, 
@@ -33,9 +29,11 @@ const MyPosts = (props) => {
         </div>
       </div>
       <div className={classes.posts}>
-        {postsElements}
-        {/* { likeElements }*/}
+        { postsElements }
+       {/* { likeElements }*/}  
+       
       </div>
+      }
     </div>)
 }
 

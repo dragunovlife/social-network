@@ -2,20 +2,20 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import Target from './components/Target/Target';
 import News from './components/News/News';
+import Event from './components/Event/Event';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route} from 'react-router-dom';
-import Sidebar from './components/Sidebar/Sidebar';
 import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
 
-let SomeComponent = () => <Idea />
+function App(props) {
 
-function App() {
   return (
     <BrowserRouter>
     <div className='app-wrapper'>
@@ -24,17 +24,17 @@ function App() {
       <Sidebar />
 
      <div className="app-wrapper-content">
-     <Route path='/profile' component={Profile} />
-     <Route path='/dialogs' component={Dialogs} />{/* Delete exact */}
-     <Route path='/news' component={News} />
-     <Route path='/target' component={Target} />
-     <Route path='/music' component={Music} />
-     <Route path='/timer' component={Timer} />
-     /*<Route path='/idea' component={Idea} />
-     <Route path='/settings' component={Settings} />*/
-
-     <Route path='/idea' render={ () => <Idea /> } />
+     <Route path='/profile' render={ () => <Profile posts={props.posts} /> } />
+     <Route path='/dialogs' render={ () => <Dialogs dialogs={props.dialogs} messages={props.messages} /> } /> {/* Delete exact */}
+     <Route path='/target' render={ () => <Target /> } />
+     <Route path='/news' render={ () => <News /> } />
+     <Route path='/event' render={ () => <Event /> } />
+     <Route path='/music' render={ () => <Music /> } />
+     <Route path='/timer' render={ () => <Timer /> } />
      <Route path='/settings' render={ () => <Settings /> } />
+
+    {/*<Route path='/idea' component={Idea} />
+     <Route path='/settings' component={Settings} />*/}
 
     </div>
 
@@ -45,3 +45,4 @@ function App() {
 }
 
 export default App;
+
