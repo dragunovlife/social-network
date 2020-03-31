@@ -1,0 +1,10 @@
+.progressbar {
+    margin-top: 20px; 
+    width: 150px;
+    text-align: center; 
+    color: #fff;
+}
+
+.p {
+	text-decoration: line-through;
+}	

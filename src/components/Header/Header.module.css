@@ -2,18 +2,31 @@
   display: flex;
   grid-area: h;
   height: 50px;
-  background: #8E2DE2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /*  background: #8E2DE2;
+ fallback for old browsers
+ background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+ Chrome 10-25, Safari 5.1-6
+ background: linear-gradient(to right, #4A00E0, #8E2DE2);
+ W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 20px;
+  border: 2px solid #4A00E0;
+  border-radius: 0px 0px 50px 50px;
+  border-left: none;
+  border-right: none;
+  color: #fff;
 }
 
-.logo {
+/* .logo {
   width: 100px;
   margin-left: 50px;
   border-radius: 50px;
+} */
+
+.h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: #fff;
 }
 
 ul {
@@ -22,7 +35,40 @@ ul {
 }
 
 li {
-  margin-left: 40px;
   list-style-type: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205.5px;
+  height: 50px;
+  color: gray;
+  /* Цвет ссылки */
+  text-decoration: none;
+}
+
+.item a:visited {
+  color: gray;
+  /* Цвет посещённой ссылки */
+}
+
+.item a:hover {
   color: #fff;
+  /* Цвет ссылки при наведении на нее курсора мыши */
+  border: 2px solid #4A00E0;
+  border-radius: 0px 50px;
+  border-left: none;
+  border-right: none;
+}
+
+.item a.activeLink {
+  color: #fff;
+  /* Цвет активной ссылки */
 }

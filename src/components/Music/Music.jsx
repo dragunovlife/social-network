@@ -9,8 +9,4 @@ const Music = (props) => {
 	)
 }
 
-const percentage = 66;
- 
-
-
 export default Music;

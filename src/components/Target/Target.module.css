@@ -1,3 +1,21 @@
 img {
 	width: 250px;
 }
+
+.progressbar1 {
+	width: 150px;
+	
+}
+
+.p {
+	text-decoration: line-through;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.t1 {
+	width: 250px;
+	border: 4px solid black;
+}
