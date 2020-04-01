@@ -13,7 +13,9 @@ import Event from './components/Event/Event';
 import Music from './components/Music/Music';
 import Test from './components/Test/Test';
 import Notebook from './components/Notebook/Notebook';
+import Tools from './components/Tools/Tools';
 import Settings from './components/Settings/Settings';
+import Questions from './components/Questions/Questions';
 import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
 
@@ -35,7 +37,10 @@ function App(props) {
        <Route path='/music' render={ () => <Music /> } />
        <Route path='/test' render={ () => <Test /> } />
        <Route path='/notebook' render={ () => <Notebook /> } />
+       <Route path='/tools' render={ () => <Tools /> } />
        <Route path='/timer' render={ () => <Timer /> } />
+       <Route path='/questions' render={ () => <Questions /> } />
+       <Route path='/idea' render={ () => <Idea /> } />
        <Route path='/settings' render={ () => <Settings /> } />
 
     {/*<Route path='/idea' component={Idea} />

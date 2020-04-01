@@ -1,5 +1,5 @@
 .nav {  
-  height: 600px;
+  height: 605px;
   grid-area: n;
   background: #222;
   border: 2px solid #4A00E0;
@@ -45,4 +45,5 @@
   border-radius: 0px 50px;
   border-left: none;
   border-right: none;
+  box-shadow: 0 1rem 3rem rgb(74,0,224)!important;
 }

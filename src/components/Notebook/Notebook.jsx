@@ -12,8 +12,41 @@ const Notebook = (props) => {
 			
 			<p>Сделать таймер</p>
 			<p>Сделать список задач</p>
-    		<p>Прогрес бар</p>
-		</div>
+
+
+
+    		<h1>Что нужно сделть чтобы ускорить и улучшить своё обучение как лучше понимать?</h1>
+    		<p>Записывай</p>
+    		<p>Комкоментарий</p>
+    		<p>Проговаривай</p>
+    		<p>Практикуй</p>
+    		
+
+    		<h1>Что необходимо выучить для создания списка с привязкой к прогрез бару</h1>
+    		<p>Функции</p>
+    		<p>getelementbyid</p>
+    		<p>onclick</p>
+
+
+
+
+{/*let i = () => {
+    document.getElementsByClassName("sqdOP  L3NKy   y3zKF     ").click();
+}
+
+i;*/}
+    	
+
+    		{/*var btn = document.getElementsByClassName('button');
+ 
+btn.onclick = function() {
+  alert(this.id);
+}*/}
+
+
+
+
+    	</div>
 	)
 }
 

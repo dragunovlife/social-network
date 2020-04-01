@@ -23,10 +23,11 @@ let state = {
 				  ]
 		},
 
-	sidebar: {
-
-	}
-
+		sidebar: [
+		{ id: 3, name: 'Roman' },
+		{ id: 4, name: 'Sveta' },
+		{ id: 5, name: 'Viktor' }
+		]
 	}
 
 	export default state;
