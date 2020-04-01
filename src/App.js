@@ -29,7 +29,7 @@ function App(props) {
         <Sidebar />
 
        <div className="app-wrapper-content">
-       <Route path='/profile' render={ () => <Profile state={props.state.profilePage} /> } />
+       <Route path='/profile' render={ () => <Profile state={props.state.profilePage} addPost={props.addPost} /> } />
        <Route path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage} /> } /> {/* Delete exact */}
        <Route path='/target' render={ () => <Target /> } />
        <Route path='/news' render={ () => <News /> } />
@@ -53,4 +53,4 @@ function App(props) {
 }
 
 export default App;
-
+   

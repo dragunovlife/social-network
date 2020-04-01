@@ -5,6 +5,7 @@ const Settings = (props) => {
 	return (
 		<div className={classes.content}>
 			Settings
+
 		</div>
 	)
 }
