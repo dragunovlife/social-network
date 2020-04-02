@@ -36,6 +36,7 @@
   border-radius: 0px 50px;
   border-left: none;
   border-right: none;
+  box-shadow: 0 1rem 3rem rgb(74,0,224)!important;
 }
 
 .item a.activeLink {

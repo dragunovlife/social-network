@@ -2,9 +2,10 @@ import React from 'react';
 import classes from "./Notebook.module.css";
 
 const Notebook = (props) => {
+
 	return (
 		<div className={classes.content}>
-			Notebook
+			<h1>Notebook</h1>
 			<p><a href="https://codecombat.com/play/">codecombat</a></p>
 			<p><a href="https://screeps.com/">screeps</a></p>
 

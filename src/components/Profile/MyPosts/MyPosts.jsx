@@ -11,9 +11,9 @@ const MyPosts = (props) => {
   let newPostElememt = React.createRef ();
 
   let addPost = () => {
-    debugger;
     let text = newPostElememt.current.value;
     props.addPost(text);
+    newPostElememt.current.value = '';
   }
 
   /*let like = [
