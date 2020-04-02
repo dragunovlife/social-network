@@ -19,9 +19,12 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 826,
+    background: '#222',
+    boxShadow: '0px 14px 80px rgba(74,0,224)',
   },
-  media: {
+  media: { 
+    width: '100%',
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
@@ -48,7 +51,7 @@ export default function RecipeReviewCard() {
     setExpanded(!expanded);
   };
 
-  return (
+  return (<div>
     <Card className={classes.root}>
       <CardHeader
         avatar={
@@ -61,10 +64,10 @@ export default function RecipeReviewCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Plunhe"
+        subheader="April 2, 2020"
       />
-      <CardMedia
+      <CardMedia 
         className={classes.media}
         image="https://smartprogress.do/uploadImages/001154083_l_crop.jpg"
         title="Paella dish"
@@ -121,6 +124,6 @@ export default function RecipeReviewCard() {
         </CardContent>
       </Collapse>
     </Card>
-  );
+  </div>);
 }
 

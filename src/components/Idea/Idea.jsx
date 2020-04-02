@@ -8,7 +8,7 @@ const Idea = (props) => {
 			<p className={classes.p}>Idea</p>
 			<h1>Idea</h1>
 			<p>Взять тему Sweat из KDE</p>
-			<Card />		
+			<Card />			
 		</div>
 	)
 }

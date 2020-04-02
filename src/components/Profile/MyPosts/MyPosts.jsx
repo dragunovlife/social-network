@@ -11,9 +11,13 @@ const MyPosts = (props) => {
   let newPostElememt = React.createRef ();
 
   let addPost = () => {
+    props.addPost();
+  }
+
+
+  let onPostChange = () => {
     let text = newPostElememt.current.value;
-    props.addPost(text);
-    newPostElememt.current.value = '';
+    props.updateNewPostText(text);
   }
 
   /*let like = [
@@ -29,7 +33,7 @@ const MyPosts = (props) => {
       <h2>My posts</h2>
       <div>
         <div>
-          <textarea ref={newPostElememt} className={classes.textarea}></textarea>
+          <textarea onChange={onPostChange} ref={newPostElememt} className={classes.textarea}  value={props.newPostText} />
         </div>
 
         <div>

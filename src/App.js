@@ -18,6 +18,7 @@ import Settings from './components/Settings/Settings';
 import Questions from './components/Questions/Questions';
 import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
+import T1 from './components/Target/Target';
 
 function App(props) {
 
@@ -29,9 +30,16 @@ function App(props) {
         <Sidebar />
 
        <div className="app-wrapper-content">
-       <Route path='/profile' render={ () => <Profile state={props.state.profilePage} addPost={props.addPost} /> } />
+       <Route path='/profile' 
+              render={ () => <Profile   
+                  profilePage={props.state.profilePage}
+                  addPost={props.addPost}
+                  updateNewPostText={props.updateNewPostText} /> } />
+       
+
        <Route path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage} /> } /> {/* Delete exact */}
        <Route path='/target' render={ () => <Target /> } />
+       <Route path='/target' render={ () => <T1 /> } />
        <Route path='/news' render={ () => <News /> } />
        <Route path='/event' render={ () => <Event /> } />
        <Route path='/music' render={ () => <Music /> } />

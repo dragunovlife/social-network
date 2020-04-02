@@ -2,8 +2,9 @@ import React from 'react';
 import classes from "./Questions.module.css"
 
 const Questions = (props) => {
-	return (
+	return (	
 		<div className={classes.content}>
+
 			Questions
 		</div>
 	)

@@ -10,7 +10,7 @@ let addPost = () => {
     alert(text);
   }
 
-const percentage = 30;
+const percentage = 33;
 
 const progressbar = <CircularProgressbar
   value={percentage}
