@@ -4,7 +4,7 @@ import classes from "./Progresscard.module.css"
 //https://github.com/kevinsqi/react-circular-progressbar/tree/3f64e7bdaf878cf6d96e5e9bba7cefde62d74116
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
-let percentage = 36;
+let percentage = 37;
 let addPost = () => {
     percentage++;
     alert(percentage);
