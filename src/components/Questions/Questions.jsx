@@ -4,8 +4,7 @@ import classes from "./Questions.module.css"
 const Questions = (props) => {
 	return (	
 		<div className={classes.content}>
-
-			Questions
+		<h1>Questions</h1>
 		</div>
 	)
 }
