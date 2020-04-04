@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return <header className={classes.header}>
-    <h1 className={classes.h1}>Creator</h1>
+    <h1 className={classes.h1}>Action Creator</h1>
     {/*<img className={classes.logo} src="../logo1.png" />*/}
     <ul>  
       <li className={classes.item}>
