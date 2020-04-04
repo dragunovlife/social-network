@@ -27,7 +27,7 @@ function App(props) {
 
         <Header />
         <Navbar />
-        <Sidebar />
+        <Sidebar /> 
 
        <div className="app-wrapper-content">
        <Route path='/profile' 
@@ -36,7 +36,8 @@ function App(props) {
                   dispatch={props.dispatch} /> } />
        
 
-       <Route path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage} /> } /> {/* Delete exact */}
+       <Route path='/dialogs' 
+              render={ () => <Dialogs store={props.store} /> } /> 
        <Route path='/target' render={ () => <Target /> } />
        <Route path='/target' render={ () => <T1 /> } />
        <Route path='/news' render={ () => <News /> } />
