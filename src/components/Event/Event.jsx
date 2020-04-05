@@ -4,7 +4,7 @@ import classes from "./Event.module.css";
 const Event = (props) => {
 	return (
 		<div className={classes.content}>
-			Event
+		<h1>Event</h1>	
 		</div>
 	)
 }
