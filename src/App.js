@@ -19,6 +19,7 @@ import Questions from './components/Questions/Questions';
 import Idea from './components/Idea/Idea';
 import Timer from './components/Timer/Timer';
 import T1 from './components/Target/Target';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 function App(props) {
 
@@ -31,13 +32,11 @@ function App(props) {
 
        <div className="app-wrapper-content">
        <Route path='/profile' 
-              render={ () => <Profile   
-                  profilePage={props.state.profilePage}
-                  dispatch={props.dispatch} /> } />
+              render={ () => <Profile store={props.store} /> } />
        
 
        <Route path='/dialogs' 
-              render={ () => <Dialogs store={props.store} /> } /> 
+              render={ () => <DialogsContainer store={props.store} /> } /> 
        <Route path='/target' render={ () => <Target /> } />
        <Route path='/target' render={ () => <T1 /> } />
        <Route path='/news' render={ () => <News /> } />
