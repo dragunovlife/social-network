@@ -5,8 +5,8 @@ import Like from './Post/Like/Like';
 
 const MyPosts = (props) => {
 
-  let postsElements = 
-  props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
+  let postsElements =
+    props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
 
   let newPostElememt = React.createRef ();
 
@@ -16,11 +16,11 @@ const MyPosts = (props) => {
 
   let onPostChange = () => {
     let text = newPostElememt.current.value;
-    props.updateNewPostText(text);   
+    props.updateNewPostText(text);
   }
 
   /*let like = [
-    {id: 1, likesCount: 60}, 
+    {id: 1, likesCount: 60},
     {id: 2, likesCount: 30}
   ]
 
@@ -29,24 +29,24 @@ const MyPosts = (props) => {
   return (
     <div className={classes.myposts}>
 
-      <h2>My posts</h2>
-      <div>
-        <div>
-        <textarea onChange={onPostChange} ref={newPostElememt} className={classes.textarea}  value={props.newPostText} />
-        </div>
+    <h2>My posts</h2>
+    <div>
+    <div>
+    <textarea onChange={onPostChange} ref={newPostElememt} className={classes.textarea}  value={props.newPostText} />
+    </div>
 
-        <div>
-          <button onClick={onAddPost}>Add post</button>
-          <button>Remove</button>
-        </div>
-      </div>
-      <div className={classes.posts}>
-        { postsElements }
-       {/* { likeElements }*/}  
-       
-      </div>
-      }
-    </div>)
+    <div>
+    <button onClick={onAddPost}>Add post</button>
+    <button>Remove</button>
+    </div>
+    </div>
+    <div className={classes.posts}>
+    { postsElements }
+  {/* { likeElements }*/}
+
+  </div>
+}
+</div>)
 }
 
 export default MyPosts;

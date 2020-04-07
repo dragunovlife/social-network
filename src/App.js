@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
@@ -21,43 +21,44 @@ import Timer from './components/Timer/Timer';
 import T1 from './components/Target/Target';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 
-function App(props) {
+function App() {
 
   return (
     <div className='app-wrapper'>
 
-        <Header />
-        <Navbar />
-        <Sidebar /> 
+      <Header />
+      <Navbar />
+      <Sidebar />
 
-       <div className="app-wrapper-content">
-       <Route path='/profile' 
-              render={ () => <Profile store={props.store} /> } />
-       
+      <div className="app-wrapper-content">
 
-       <Route path='/dialogs' 
-              render={ () => <DialogsContainer store={props.store} /> } /> 
-       <Route path='/target' render={ () => <Target /> } />
-       <Route path='/target' render={ () => <T1 /> } />
-       <Route path='/news' render={ () => <News /> } />
-       <Route path='/event' render={ () => <Event /> } />
-       <Route path='/music' render={ () => <Music /> } />
-       <Route path='/test' render={ () => <Test /> } />
-       <Route path='/notebook' render={ () => <Notebook /> } />
-       <Route path='/tools' render={ () => <Tools /> } />
-       <Route path='/timer' render={ () => <Timer /> } />
-       <Route path='/questions' render={ () => <Questions /> } />
-       <Route path='/idea' render={ () => <Idea /> } />
-       <Route path='/settings' render={ () => <Settings /> } />
 
-    {/*<Route path='/idea' component={Idea} />
+
+        <Route path='/profile'
+          render={() => <Profile />} />
+        <Route path='/dialogs'
+          render={() => <DialogsContainer />} />
+
+        <Route path='/target' render={() => <Target />} />
+        <Route path='/target' render={() => <T1 />} />
+        <Route path='/news' render={() => <News />} />
+        <Route path='/event' render={() => <Event />} />
+        <Route path='/music' render={() => <Music />} />
+        <Route path='/test' render={() => <Test />} />
+        <Route path='/notebook' render={() => <Notebook />} />
+        <Route path='/tools' render={() => <Tools />} />
+        <Route path='/timer' render={() => <Timer />} />
+        <Route path='/questions' render={() => <Questions />} />
+        <Route path='/idea' render={() => <Idea />} />
+        <Route path='/settings' render={() => <Settings />} />
+
+        {/*<Route path='/idea' component={Idea} />
        <Route path='/settings' component={Settings} />*/}
 
       </div>
     </div>
-   
+
   )
 }
 
 export default App;
-   
