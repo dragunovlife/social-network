@@ -23,3 +23,29 @@
  background: linear-gradient(to right, #4A00E0, #8E2DE2);
  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+
+/* Style scrollbar start */
+ ::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #222;
+}
+
+ ::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+ 
+}
+
+ ::-webkit-scrollbar-thumb
+{
+  border-radius: 50px 0px;
+  background-color: #4A00E0;
+  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                     color-stop(.1, rgba(255, 255, 255, .2)),
+             color-stop(.5, transparent), to(transparent));
+}
+/* Style scrollbar end */
