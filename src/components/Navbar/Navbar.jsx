@@ -2,11 +2,14 @@ import React from 'react';
 import classes from './Navbar.module.css';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className={classes.nav}>
       <div className={`${classes.item} ${classes.active}`}>
         <NavLink to="/profile" activeClassName={classes.activeLink}>Profile</NavLink>
+      </div>
+      <div className={`${classes.item} ${classes.active}`}>
+        <NavLink to="/users" activeClassName={classes.activeLink}>Users</NavLink>
       </div>
       <div className={classes.item}>
         <NavLink to="/dialogs" activeClassName={classes.activeLink}>Messages</NavLink>
@@ -19,6 +22,9 @@ const Navbar = () => {
       </div>
       <div className={classes.item}>
         <NavLink to="/event" activeClassName={classes.activeLink}>Event</NavLink>
+      </div>
+        <div className={classes.item}>
+        <NavLink to="/todolist" activeClassName={classes.activeLink}>Todolist</NavLink>
       </div>
       <div className={classes.item}>
         <NavLink to="/music" activeClassName={classes.activeLink}>Music</NavLink>

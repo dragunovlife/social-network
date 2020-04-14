@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Sidebar.module.css';
 import { NavLink } from 'react-router-dom';
 import T2 from "../Target/Progresscard/Progresscard";
+import TodoApp from "../Music/Music";
 
 const Sidebar = () => {
   return (
@@ -9,6 +10,7 @@ const Sidebar = () => {
       <div className={classes.progressbar}>
         <T2 />
       </div>
+      <TodoApp />
       <div className={classes.triangleright}>
         <NavLink to="/timer" activeClassName={classes.activeLink}>1</NavLink>
       </div>

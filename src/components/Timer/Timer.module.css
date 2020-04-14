@@ -1,7 +1,153 @@
-.timer {
-  flex-wrap: wrap;
-  margin-top: 100px;
-  height: 100px;
+/* https://codepen.io/frozenfroggie/pen/egxrpE*/
+
+$border_1: 3px solid rgba(50,50,255,0.7);
+$border_2: 1px solid rgba(255,50,50,0.8);
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+* {
+  margin: 0px;
+}
+
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  color: rgb(210,210,210);
+  background-color: #111;
+  font-family: 'Great Vibes', cursive;
+}
+
+button {
+  color: grey;
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;  
+}
+
+#title {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive''
+}
+
+#break_session {
+      margin: auto;
+      width: 392px;
+    font-size: 24px;
+ 
+  #break, #session {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    width: 154px;
+    background-color: rgba(3,0,3,0.7);
+    border: 1px solid black;
+    .setTime > * {
+      width: 50px;
+      display: inline-block;
+      text-align: center;
+      font-size: 25px; 
+    }
+  }
+  #break {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  #session {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+#timerContainer {
+  width: 250px;
+  margin: auto;
+  font-family: 'Great Vibes', cursive;
+  
+  #colorCircle {
+    position: relative;
+    border-radius: 100%;
+    border-top: $border_1;
+    border-right: $border_1;
+    border-bottom: $border_1;
+    width: 250px;
+    height: 250px;
+    animation: animation 3s infinite linear;
+  }
+  #timer {
+    line-height: 160%;
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    span {
+      font-size: 40px;
+      letter-spacing: 0px;
+      font-weight: 900;
+    }
+    font-family: 'Great Vibes', cursive;  
+    @include box-shadow(-20px, -20px, 70px, black, true);
+    border: $border_2;
+    position: relative;
+    top: -253px;
+    right: -1px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+    background-color: rgb(5,0,5);
+  }
+  #timer:hover {
+    border: none;
+  }
+}
+
+@keyframes animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(100deg)
+  }
+  50% {
+    transform: rotate(150deg)
+  }
+  75% {
+    transform: rotate(200deg)
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#footer {
+  color: silver;
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  font-weight: normal;
   width: 100%;
-  background: black;
+  line-height: 42px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(10,10,10,0.8);
 }
