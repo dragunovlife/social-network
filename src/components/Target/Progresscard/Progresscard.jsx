@@ -47,9 +47,12 @@ const React1 = (props) => {
       <p>Отследить прогрес</p>
       <h3>Осталось 52%</h3>
       <p>Отследить остаток</p>
-    
+     
       <p className={classes.p}>01. ReactJS - Путь Самурая - Как смотреть данный курс?</p>
       <p className={classes.p}>02. Уроки React JS (Зачем NodeJS на фронте)</p> 
+      <p className={classes.p}>03. Уроки React JS (Установка NodeJS)</p> 
+      <p className={classes.p}>04. Уроки React JS (create-react-app)</p> 
+
       </div>
     )
 }
