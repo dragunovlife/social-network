@@ -1,0 +1,19 @@
+.side {
+    padding-left: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    grid-area: s;
+    background: #222;
+    border: 2px solid #4A00E0;
+    border-right: none;
+    border-radius: 50px 0px;
+}
+
+.progressbar {
+    margin-top: 20px; 
+    width: 150px;
+    text-align: center; 
+    color: #fff;
+}
