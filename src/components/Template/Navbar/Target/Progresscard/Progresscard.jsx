@@ -4,7 +4,7 @@ import classes from "./Progresscard.module.css"
 //https://github.com/kevinsqi/react-circular-progressbar/tree/3f64e7bdaf878cf6d96e5e9bba7cefde62d74116
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
-let percentage = 48;
+let percentage = 54;
 let addPost = () => {
   percentage++;
   alert(percentage);
@@ -43,9 +43,9 @@ const React1 = (props) => {
     <h1 onClick={addPost}>React</h1>
     <h6>Курс "React JS - путь самурая 1.0</h6>
     { progressbar } 
-    <h3>Выполнено 48%</h3>
+    <h3>Выполнено 54%</h3>
     <p>Отследить прогрес</p>
-    <h3>Осталось 52%</h3>
+    <h3>Осталось 46%</h3>
     <p>Отследить остаток</p>
     
     <p className={classes.p}>01. ReactJS - Путь Самурая - Как смотреть данный курс?</p>
